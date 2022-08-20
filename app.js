@@ -13,6 +13,7 @@ mongoose.connect("mongodb://localhost:27017/recipeApi");
 const recipeSchema = {
   name: String,
   category: String,
+  source: String,
   ingredients: [
     {
       i1: String,
