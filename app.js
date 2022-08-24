@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const multer = require("multer");
+const upload = multer({ dest: "uploads/" });
 
 const app = express();
 
@@ -64,6 +66,9 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.post("/profile", upload.single("avatar"), (req, res) => {
+  console.log(req.file);
+});
 let port = process.env.PORT || 8000;
 app.listen(port, () => {
   console.log("Server is running");

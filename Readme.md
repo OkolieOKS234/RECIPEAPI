@@ -47,3 +47,21 @@ const recipeSchema = {
 
 
 ```
+### TECHNOLOGIES USED
+Mongodb
+React (For frontend documentation)
+Express
+Node(Environment for making the Api dynamic.)
+
+
+
+##Adding OAUTH 2.0 Authorisation
+Login via google
+What is Special about OAUTH?
+1. requesting specific things
+2. Read or write
+3. De-authorisation
+
+#### DEVELOPERS CONTRIBUTIONS
+You can choose to pick within 2 categories, namely snacks and foods
+
